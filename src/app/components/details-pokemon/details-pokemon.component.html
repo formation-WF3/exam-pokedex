@@ -1,15 +1,22 @@
-<h1>{{ title }}</h1>
+<section>
 
-<div *ngIf="pokemon">
-  <h2>{{ pokemon.nom }}</h2>
+  <div *ngIf="pokemon; else noPokemon">
+    <h2>Détails de {{ pokemon.nom | uppercase }}</h2>
 
-  <p>{{ pokemon.taille }}</p>
-  <p>{{ pokemon.evolution }}</p>
-  <p>{{ pokemon.faiblesses }}</p>
-  <p>{{ pokemon.attaques }}</p>
-</div>
+    <p>Taille : <span>{{ pokemon.taille }}</span></p>
 
-<div>
-  <button [routerLink]="['/pokemons']">Retour à la liste</button>
-</div>
+    <p>Evolution(s) : <span>{{ pokemon.evolution }}</span></p>
 
+    <p>Faiblesses : <span>{{ pokemon.faiblesses }}</span></p>
+
+    <p>Attaque : <span>{{ pokemon.attaque }}</span></p>
+  </div>
+  <ng-template #noPokemon>
+    <p>Pokémon non trouvé</p>
+  </ng-template>
+
+  <div>
+    <button [routerLink]="['/pokemons']">Retour aux listes</button>
+  </div>
+
+</section>

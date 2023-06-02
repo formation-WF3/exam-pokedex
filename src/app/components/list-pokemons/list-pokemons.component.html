@@ -1,7 +1,9 @@
-<h1>{{ title }}</h1>
+<ul class="pokemons">
 
-<p *ngFor="let pokemon of pokemons">
+  <li *ngFor="let pokemon of pokemons" [className]="pokemonsType">
 
-  <a [routerLink]="['/pokemons', pokemon.id]">Id: {{ pokemon.id }}, Nom: {{ pokemon.nom }}</a>
+    <a [routerLink]="['/pokemons', pokemon.id]"><span class="badge">{{ pokemon.id }}</span><span class="text"> {{ pokemon.nom }}</span></a>
 
-</p>
+  </li>
+
+</ul>

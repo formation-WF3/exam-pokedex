@@ -1,0 +1,70 @@
+/* ListPokemonsComponent's private CSS styles */
+.pokemons {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+.pokemons li {
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+li a {
+  color: black;
+}
+
+.pokemons li:hover {
+  background-color: #DDD;
+  left: .1em;
+}
+
+.pokemons .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 11px 11px 0;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.pokemons .text {
+  position: relative;
+  top: -3px;
+}
+
+.type-feu .badge {
+  background-color: var(--orange);
+}
+
+.type-electrique .badge {
+  background-color: var(--jaune);
+  color: black;
+}
+
+.type-plante .badge {
+  background-color: var(--vert);
+}
+
+.type-feu .text {
+  color: var(--orange);
+}
+
+.type-electric li .text {
+  color: var(--jaune);
+}
+
+.type-plante .text {
+  color: var(--vert);
+}

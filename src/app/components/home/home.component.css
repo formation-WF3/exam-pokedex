@@ -1,0 +1,9 @@
+/* HomeComponent's private CSS styles */
+h1 {
+  text-align: center;
+}
+
+div {
+  display: flex;
+  column-gap: 30px;
+}

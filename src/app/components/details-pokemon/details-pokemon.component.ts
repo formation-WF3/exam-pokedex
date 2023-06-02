@@ -9,7 +9,6 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./details-pokemon.component.css']
 })
 export class DetailsPokemonComponent implements OnInit {
-  title = 'Détails d\'un Pokémon';
   pokemon?: Pokemon;
 
   constructor(
@@ -22,14 +21,8 @@ export class DetailsPokemonComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(params => {
       const id = params.get('id');
       if (id) {
-        this.pokemonService.getById(+id).subscribe(
-          pokemon => this.pokemon = pokemon
-        );
+        this.pokemon = this.pokemonService.getById(+id);
       }
     });
-  }
-
-  selectedPokemon() {
-
   }
 }
