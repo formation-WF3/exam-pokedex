@@ -1,8 +1,8 @@
-### Exam-Pokedex
+# Exam-Pokedex
 
 ## Gilles TAIGNIERE
 
-# Formation développeur Java avec iTekway
+### Formation développeur Java avec iTekway
 
 ## Webforce3
 

@@ -7,3 +7,29 @@ div {
   display: flex;
   column-gap: 30px;
 }
+
+.liste-pokemons-feu:before,
+.liste-pokemons-electrique:before,
+.liste-pokemons-plante:before {
+  position: relative;
+  left: 110px;
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.liste-pokemons-feu:before {
+  background: url("/assets/flamme.jpg") no-repeat;
+  background-size:100%;
+}
+
+.liste-pokemons-electrique:before {
+  background: url("/assets/eclair.png") no-repeat;
+  background-size:100%;
+}
+
+.liste-pokemons-plante:before {
+  background: url("/assets/plante.jpg") no-repeat;
+  background-size:100%;
+}
