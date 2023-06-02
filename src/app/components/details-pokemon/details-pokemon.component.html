@@ -1,0 +1,15 @@
+<h1>{{ title }}</h1>
+
+<div *ngIf="pokemon">
+  <h2>{{ pokemon.nom }}</h2>
+
+  <p>{{ pokemon.taille }}</p>
+  <p>{{ pokemon.evolution }}</p>
+  <p>{{ pokemon.faiblesses }}</p>
+  <p>{{ pokemon.attaques }}</p>
+</div>
+
+<div>
+  <button [routerLink]="['/pokemons']">Retour à la liste</button>
+</div>
+
