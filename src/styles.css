@@ -34,7 +34,7 @@ a {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
-  --orange: orange;
-  --jaune: yellow;
-  --vert: green;
+  --orange: #CC9633;
+  --jaune: #EBEB75;
+  --vert: #6BC76B;
 }
